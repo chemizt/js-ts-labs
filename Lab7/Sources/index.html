@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <title>JavaScript</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  <script src=scripts.jsx></script>
+  <p></p>
+  <input type="radio" name="action" value="useSimpleCalc" onclick="changeSelection()" checked>Простой калькулятор<br>
+  <input type="radio" name="action" value="useConstructedCalc" onclick="changeSelection()">Калькулятор при помощи
+  конструктора<br>
+  <input type="radio" name="action" value="useExtendableCalc" onclick="changeSelection()">Расширяемый калькулятор<br>
+  <input type="radio" name="action" value="callChain" onclick="changeSelection()">Цепочка вызовов<br>
+  <input type="radio" name="action" value="calculateVarParent" onclick="changeSelection()">Сумма произвольного
+  количества скобок<br>
+  <input type="radio" name="action" value="findPrimes" onclick="changeSelection()">Решето Эратосфена<br>
+  <p id='request'>Введите операнд №1, операцию и операнд №2</p>
+  <input type="text" id="firstInput">
+  <input type="text" id="secondInput">
+  <input type="text" id="thirdInput">
+  <button id="submitButton" onclick="performOperation()">Ввод</button>
+  <p id='output'>Здесь будет результат</p>
+</body>
+
+</html>

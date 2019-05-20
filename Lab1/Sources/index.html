@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <title>JavaScript</title>
+    <script src="alert.jsx"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src=prompt.jsx></script>
+    <p></p>
+    <input type="radio" name="action" value="stdCheck" onclick="changeSelection()" checked>Проверить стандарт<br>
+    <input type="radio" name="action" value="signCheck" onclick="changeSelection()">Проверить знак числа<br>
+    <input type="radio" name="action" value="login" onclick="changeSelection()">Авторизоваться<br>
+    <input type="radio" name="action" value="ageCheck" onclick="changeSelection()">Проверить вхождение возраста в
+    диапазон<br>
+    <input type="radio" name="action" value="startLoop" onclick="changeSelection()">Запустить цикл<br>
+    <input type="radio" name="action" value="startRequestLoop" onclick="changeSelection()">Запустить цикл с запросом<br>
+    <input type="radio" name="action" value="outputPrimes" onclick="changeSelection()">Вывести простые числа<br>
+    <input type="radio" name="action" value="browserCheck" onclick="changeSelection()">Проверить совместимость Вашего
+    браузера<br>
+    <p id='request'>Каково "официальное" название JavaScript?</p>
+    <input type="text" id="inputField">
+    <input type="password" id="passInputField" hidden>
+    <button id="submitButton" onclick="performOperation()">Ввод</button>
+    <p id='result'>Здесь будет результат</p>
+</body>
+
+</html>
